@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+  <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Addition()
+        {
+        let a=document.getElementById("textno1").value
+        let b=document.getElementById("textno2").value
+            document.getElementById("txtadd").value=a+b;
+        }
+    </script>
+    <script>
+        function Subtraction()
+        {
+            document.getElementById("txtsub").value=a-b;
+        }
+    </script>
+    <script>
+        function Multiplication()
+        {
+            let f=document.getElementById("textno1,textno2").value
+            document.getElementById("txtmulti").value=a*b;
+        }
+    </script>
+    <script>
+        function Division()
+        {
+            let g=document.getElementById("textno2").value
+            document.getElementById("txtdiv").value=a/b;
+        }
+    </script>
+  <form>
+    <table border="2" bgcolor="lavender">
+        <tr>
+            <td> No 1 </td>
+            <td> <input type ="text" id="txtno1"></td>
+            <td> No 2</td>
+            <td> <input type ="text" id="txtno2"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Add" onclick="Addition();"></td>
+            <td><input type="button" value="Sub" onclick="Subtraction();"></td>
+            <td><input type="button" value="Multiply" onclick="Multiplication();"></td>
+            <td><input type="button" value="Divide" onclick="Division();"></td>
+
+        </tr>
+        <tr>
+            <td>Add</td>
+            <td><input type="text" id="txtadd"></td>
+            <td>Sub</td>
+            <td><input type="text" id="txtsub"></td>
+            <td>Multi</td>
+            <td><input type="text" id="txtmulti"></td>
+            <td>Div</td>
+            <td><input type="text" id="txtdiv"></td>
+        </tr>
+    </table>
+  </form>
+</body>
+
+</html>

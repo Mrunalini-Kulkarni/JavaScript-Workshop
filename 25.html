@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="crimson">
+    <script>
+        function hiadd()
+        {
+            let a=parseInt(document.getElementById("txtno1").value);
+            let b=parseInt(document.getElementById("txtno2").value);
+            document.getElementById("txtans").value=a+b;
+        }
+        function hisub()
+        {
+            let a=document.getElementById("txtno1").value;
+            let b=document.getElementById("txtno2").value;
+            document.getElementById("txtans").value=a-b;
+        }
+        function himultiply()
+        {
+            let a=document.getElementById("txtno1").value;
+            let b=document.getElementById("txtno2").value;
+            document.getElementById("txtans").value=a*b;
+        }
+        function hidiv()
+        {
+            let a=document.getElementById("txtno1").value;
+            let b=document.getElementById("txtno2").value;
+            document.getElementById("txtans").value=a/b;
+        }
+    </script>
+    <form>
+        No1 <input type="text" id="txtno1"><br>
+        No2 <input type="text" id="txtno2"><br>
+        <input type="radio" id="optr" name="a" onclick="hiadd();">Add
+        <input type="radio" id="optg" name="a" onclick="hisub();">Subtract
+        <input type="radio" id="optm" name="a" onclick="himultiply();">Multiply
+        <input type="radio" id="optd" name="a" onclick="hidiv();">Divide
+        <br>
+        Ans<input type="text" id="txtans">
+    </form>
+</body>
+</html>
